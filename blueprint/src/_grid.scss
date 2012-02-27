@@ -1,0 +1,149 @@
+$grid_width = 950;
+$grid_columns = 24;
+$grid_columnwidth = 30px;
+$grid_margin = 10px;
+
+/* A container should group all your columns. */
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid {
+  background: url(src/grid.png);
+}
+
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+/* Use these classes to set the width of a column. */
+@for $i from 1 through $grid_columns {
+	.span-#{$i} {
+		float:left;
+		margin-right: $grid_margin;
+		width: $grid_columnwidth * $i + $grid_margin;
+	}
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of an input. */
+@for $i from 1 through $grid_columns {
+	input.span-#{$i} {
+		border-left-width: 1px;
+		border-right-width: 1px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width:($grid_columnwidth * $i - 12)px;
+	}
+	textarea.span-#{$i} {
+		border-left-width: 1px;
+		border-right-width: 1px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width:($grid_columnwidth * $i - 12)px;
+	}
+}
+
+/* Add these to a column to append empty cols. */
+@for $i from 1 through $grid_columns {
+	.append-#{$i} {
+		padding-right:($grid_columnwidth * $i + $grid_margin)px;
+	}
+}
+
+/* Add these to a column to prepend empty cols. */
+@for $i from 1 through $grid_columns {
+	.prepend-#{$i} {
+		padding-left:($grid_columnwidth * $i + $grid_margin)px;
+	}
+}
+
+/* Border on right hand side of a column. */
+.border {
+  padding-right: 4px;
+  margin-right: 5px;
+  border-right: 1px solid #ddd;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #ddd;
+}
+
+
+/* Use these classes on an element to push it into the
+next column, or to pull it into the previous column.  */
+@for $i from 1 through $grid_columns {
+	.pull-#{$i} {
+		margin-left:-($grid_columnwidth * $i + $grid_margin)px;
+		float: left;
+		position:relative;
+	}
+	.push-#{$i} {
+		margin:0 -($grid_columnwidth + $grid_margin) 1.5em ($grid_columnwidth + $grid_margin);
+		float: left; position:relative;
+	}
+}
+
+/* Misc classes and elements
+-------------------------------------------------------------- */
+
+/* In case you need to add a gutter above/below an element */
+div.prepend-top, .prepend-top {
+  margin-top:1.5em;
+}
+div.append-bottom, .append-bottom {
+  margin-bottom:1.5em;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5eCf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 17px;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+  visibility: hidden;
+}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear { clear:both; }
