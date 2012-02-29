@@ -1,0 +1,3 @@
+#!/bin/sh
+scss --style compressed --watch .:./css
+
