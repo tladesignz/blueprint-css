@@ -2,6 +2,7 @@
 *.svn
 *.DS_Store
 .bundle
+.project
 tmp/*
 lib/settings.yml
 capybara-*
