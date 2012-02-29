@@ -41,3 +41,6 @@ The Fancy Type plugin is based on work by:
 (However, remember that these people are not involved with the
 framework, so please don't waste their time or yours by asking 
 them for support.)
+
+The SCSS work is based on work by:
+* "Hannes Moser":http://impossiblearts.com
