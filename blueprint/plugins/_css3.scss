@@ -128,3 +128,13 @@
 	background: linear-gradient(top, $color1 0%,$color2 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}',GradientType=0 ); /* IE6-9 */
 }
+
+/**
+ * CSS3 Opacity
+ * @param $opacity 
+ */
+@mixin opacity($opacity) {
+	-moz-opacity: $opacity;
+	opacity: $opacity;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
+}
