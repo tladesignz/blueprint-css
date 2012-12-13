@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Blueprint-CSS with SASS by eliias</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Blueprint-CSS with SASS</h1>
+        <p>A CSS framework that aims to cut down on your CSS development time</p>
+
+        <p class="view"><a href="https://github.com/eliias/blueprint-css">View the Project on GitHub <small>eliias/blueprint-css</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/eliias/blueprint-css/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/eliias/blueprint-css/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/eliias/blueprint-css">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Blueprint CSS Framework Readme</h1>
+
+<hr><p>Welcome to Blueprint! This is a CSS framework designed to cut down on your CSS development time. It gives you a solid foundation to build your own CSS on. Here are some of the features BP provides out-of-the-box:</p>
+
+<ul>
+<li>An easily customizable grid</li>
+<li>Sensible default typography</li>
+<li>A typographic baseline</li>
+<li>Perfected browser CSS reset</li>
+<li>A stylesheet for printing</li>
+<li>Powerful scripts for customization</li>
+<li>Absolutely no bloat!</li>
+</ul><h2>Project Info</h2>
+
+<ul>
+<li>
+<em>Web</em>: "<a href="http://blueprintcss.org%22:http://blueprintcss.org">http://blueprintcss.org":http://blueprintcss.org</a>
+</li>
+<li>
+<em>Source</em>: "<a href="http://github.com/joshuaclayton/blueprint-css%22:http://github.com/joshuaclayton/blueprint-css">http://github.com/joshuaclayton/blueprint-css":http://github.com/joshuaclayton/blueprint-css</a>
+</li>
+<li>
+<em>Wiki</em>: "<a href="http://github.com/joshuaclayton/blueprint-css/wikis/home%22:http://github.com/joshuaclayton/blueprint-css/wikis/home">http://github.com/joshuaclayton/blueprint-css/wikis/home":http://github.com/joshuaclayton/blueprint-css/wikis/home</a>
+</li>
+<li>
+<em>Bug/Feature Tracking</em>: "<a href="http://blueprintcss.lighthouseapp.com%22:http://blueprintcss.lighthouseapp.com">http://blueprintcss.lighthouseapp.com":http://blueprintcss.lighthouseapp.com</a>
+</li>
+</ul><h2>Setup Instructions</h2>
+
+<p>Here's how you set up Blueprint on your site.</p>
+
+<ul>
+<li>Upload the "blueprint" folder in this folder to your server, and place it in whatever folder you'd like. A good choice would be your CSS folder.</li>
+<li>Add the following three lines to every @</li>@ of your site. Make sure the three <a href="https://github.com/href" class="user-mention">@href</a>@ paths are
+<li>correct (here, BP is in my CSS folder):</li>
+</ul><div class="highlight"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/blueprint/screen.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">media=</span><span class="s">"screen, projection"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/blueprint/print.css"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">media=</span><span class="s">"print"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!--[if lt IE 8]&gt;</span>
+<span class="c">  &lt;link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
+</pre></div>
+
+<ul>
+<li>Remember to include trailing slashes (" /&gt;") in these lines if you're using XHTML.</li>
+<li>For development, add the .showgrid class to any container or column to see the underlying grid. Check out the @plugins@ directory for more advanced functionality.</li>
+</ul><h2>Tutorials</h2>
+
+<ul>
+<li>"How to customize BP with the compressor script":<a href="http://jdclayton.com/blueprints_compress_a_walkthrough.html">http://jdclayton.com/blueprints_compress_a_walkthrough.html</a>
+</li>
+<li>"How to use a grid in a layout":<a href="http://subtraction.com/2007/03/18/oh-yeeaahh">http://subtraction.com/2007/03/18/oh-yeeaahh</a>
+</li>
+<li>"How to use a baseline in your typography":<a href="http://alistapart.com/articles/settingtypeontheweb">http://alistapart.com/articles/settingtypeontheweb</a>
+</li>
+</ul><h2>Files in Blueprint</h2>
+
+<p>The framework has a few files you should check out. Every file in the <a href="https://github.com/src" class="user-mention">@src</a>@ directory contains lots of (hopefully) clarifying comments.</p>
+
+<p>Compressed files (these go in the HTML):</p>
+
+<ul>
+<li>@blueprint/screen.css@</li>
+<li>@blueprint/print.css@</li>
+<li>@blueprint/ie.css@</li>
+</ul><p>Source files:</p>
+
+<ul>
+<li>@blueprint/src/reset.css@<br>
+This file resets CSS values that browsers tend to set for you.</li>
+<li>@blueprint/src/grid.css@<br>
+This file sets up the grid (it's true). It has a lot of classes you apply to @<div></div>@ elements to set up any sort of column-based grid.</li>
+<li>@blueprint/lib/blueprint/grid.css.erb@<br>
+This file is used by the compressor (see below) when generating grids. All changes to grid.css are mirrored in this file, manually. </li>
+<li>@blueprint/src/typography.css@<br>
+This file sets some default typography. It also has a few methods for some really fancy stuff to do with your text.</li>
+<li>@blueprint/src/forms.css@<br>
+Includes some minimal styling of forms.</li>
+<li>@blueprint/src/print.css@<br>
+This file sets some default print rules, so that printed versions of your site looks better than they usually would. It should be included on every page.</li>
+<li>@blueprint/src/ie.css@<br>
+Includes every hack for our beloved IE6 and 7.</li>
+</ul><p>Scripts:</p>
+
+<ul>
+<li>@lib/compress.rb@<br>
+A Ruby script for compressing and customizing your CSS. Set a custom namespace, column count, widths, output paths, multiple projects, and semantic class names. See commenting in @compress.rb@ or run @$ruby compress.rb -h@ for more information.</li>
+<li>@lib/validate.rb@<br>
+Validates the Blueprint core files with the W3C CSS validator.</li>
+</ul><p>Other:</p>
+
+<ul>
+<li>@blueprint/plugins/@<br>
+Contains additional functionality in the form of simple plugins for Blueprint. See individual readme files in the directory of each plugin for further instructions.</li>
+<li>@tests/@<br>
+Contains html files which tests most aspects of Blueprint. Open @tests/index.html@ for further instructions.</li>
+</ul><h2>Extra Information</h2>
+
+<ul>
+<li>For credits and origins, see AUTHORS.</li>
+<li>For license instructions, see LICENSE.</li>
+<li>For the latest updates, see CHANGELOG.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/eliias">eliias</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
