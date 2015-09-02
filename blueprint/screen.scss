@@ -4,9 +4,9 @@
 */
 
 /* Grid setup */
-$-blueprint-grid-columns:24;
-$-blueprint-grid-width:30px;
-$-blueprint-grid-gutter:10px;
+$-blueprint-grid-columns: 24 !default;
+$-blueprint-grid-width: 30px !default;
+$-blueprint-grid-gutter: 10px !default;
 
 /*	############################################################################
 	Main Modules
